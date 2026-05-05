@@ -57,7 +57,7 @@
       <a href="about.html">About</a>
       <a href="divisions.html">Divisions</a>
       <a href="portfolio.html">Portfolio</a>
-      <a href="blog/index.html">Insights</a>
+      <a href="blog.html">Insights</a>
       <a href="contact.html">Contact</a>
     </div>
     <a href="book.html" class="btn btn-gold nav-cta">Book a Consultation</a>
@@ -69,7 +69,7 @@
   <a href="about.html">About</a>
   <a href="divisions.html">Divisions</a>
   <a href="portfolio.html">Portfolio</a>
-  <a href="blog/index.html">Insights</a>
+  <a href="blog.html">Insights</a>
   <a href="contact.html">Contact</a>
   <a href="book.html" class="btn btn-gold" style="margin-top:1rem;">Book a Consultation</a>
 </div>
@@ -370,7 +370,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-      <a href="blog/index.html" class="btn btn-dark">Explore All Insights &rarr;</a>
+      <a href="blog.html" class="btn btn-dark">Explore All Insights &rarr;</a>
     </div>
   </div>
 </section>
@@ -436,7 +436,7 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="divisions.html">All Divisions</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog/index.html">Insights</a></li>
+          <li><a href="blog.html">Insights</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="book.html">Book a Consultation</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
@@ -469,14 +469,13 @@
 </a>
 
 <!-- COOKIE BANNER -->
-<div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:850;background:#111;border-top:1px solid rgba(200,169,91,.2);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
-  <p style="color:rgba(255,255,255,.6);font-size:.8rem;margin:0;flex:1;min-width:200px;">We use cookies to improve your experience. By continuing, you agree to our <a href="privacy.html" style="color:#C8A95B;">Privacy Policy</a>.</p>
-  <div style="display:flex;gap:.8rem;flex-shrink:0;">
-    <button onclick="document.getElementById('cookieBanner').style.display='none';localStorage.setItem('rlg_cookie','1')" style="padding:8px 20px;background:#C8A95B;color:#0B0B0B;border:none;border-radius:2px;font-size:.78rem;font-weight:600;cursor:pointer;letter-spacing:.08em;text-transform:uppercase;">Accept</button>
-    <button onclick="document.getElementById('cookieBanner').style.display='none'" style="padding:8px 20px;background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.15);border-radius:2px;font-size:.78rem;cursor:pointer;">Decline</button>
+<div class="cookie-banner" id="cookieBanner">
+  <p>We use cookies to improve your experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" id="cookieAccept">Accept</button>
+    <button class="cookie-decline" id="cookieDecline">Decline</button>
   </div>
 </div>
-<script>if(!localStorage.getItem('rlg_cookie')){document.getElementById('cookieBanner').style.display='flex';}</script>
 
 <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
 <script src="js/main.js" defer></script>
